@@ -14,7 +14,7 @@ const List = ({ items }) => {
     <ul className="url-list">
       {items.map(({ code, url }) => (
         <li>
-          <a href={url}>{code}</a>
+          <a target="_blank" href={url}>{code}</a>
         </li>
       ))}
     </ul>
