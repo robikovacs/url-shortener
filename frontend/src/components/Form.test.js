@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import userEvent from '@testing-library/user-event'
 import Form from "./Form";
 
@@ -17,9 +17,9 @@ it("submits the form", () => {
   const { getByPlaceholderText, getByText } = render(<Form onSubmit={onSubmit} />);
   const inputValue = "https://deliveroo.co.uk/";
 
-  fireEvent.change(getByPlaceholderText(PLACEHOLDER_TEXT), { target: { value: inputValue } });
-  fireEvent.click(getByText(/Save/i));
-
+  const subject = getByPlaceholderText(PLACEHOLDER_TEXT)
+  userEvent.type(subject, inputValue)
+  userEvent.click(getByText(/Save/i));
 
   expect(onSubmit).toBeCalled();
 });
