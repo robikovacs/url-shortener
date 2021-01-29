@@ -1,0 +1,199 @@
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+    - 'bin/***'
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Lint/SafeNavigationChain:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/*/**'
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/RedundantInterpolation:
+  Enabled: false
+
+Style/NumericLiteralPrefix:
+  Enabled: false
+
+Style/MultilineTernaryOperator:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Style/MultipleComparison:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'spec/*/**'
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/*/**/**'
+
+Layout/ExtraSpacing:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'db/schema.rb'
+
+Style/HashSyntax:
+  Exclude:
+    - 'lib/tasks/*.rake'
+
+Style/DateTime:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/WordArray:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: false
+
+Layout/HeredocIndentation:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  Enabled: false
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Layout/SpaceAroundBlockParameters:
+  Enabled: false
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: false
+
+Lint/SuppressedException:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+# Disable all Metrics for now
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Security/YAMLLoad:
+  Enabled: false
+
+Lint/NonDeterministicRequireOrder:
+  Exclude:
+    - 'config/environment.rb'
+    - 'spec/rails_helper.rb'

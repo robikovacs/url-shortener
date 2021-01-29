@@ -1,0 +1,10 @@
+.url-list {
+  background: white;
+  color: #555;
+  margin: 5px 0;
+  padding-left: 30px;
+}
+
+.url-list li {
+  width: 100%;
+}
